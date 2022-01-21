@@ -28,6 +28,284 @@
         width: 300px;
         height: 300px;
     }
+
+    #protocol-box .wrapper-box {
+        flex-direction: column;
+    }
+
+    #protocol-box .wrapper-box .protocol {
+        width: 75%;
+        margin-bottom: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #countdown-box .content {
+        padding: 0 0;
+        padding-top: 25%;
+    }
+
+    #countdown-box .content::before,
+    #countdown-box .content::after,
+    #gift-box .content::before,
+    #gift-box .content::after {
+        width: 200px;
+        height: 200px;
+    }
+
+    #countdown-box .wrapper-box {
+        flex-direction: column;
+    }
+
+    #countdown-box #days, #countdown-box #hours, #countdown-box #minute, #countdown-box #seconds {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #first-box .h1-wt {
+        font-size: 2.5rem;
+    }
+
+    #protocol-box {
+        padding-top: 20%;
+    }
+
+    #protocol-box .content::before,
+    #protocol-box .content::after,
+    #countdown-box .content::before,
+    #countdown-box .content::after,
+    #gift-box .content::before,
+    #gift-box .content::after {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* First Box */
+
+.single-leaf.first-box.leaf-one.left {
+    left: 0.5%; top: -20%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.first-box.leaf-two.left {
+    left: 1.5%; top: -20%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.first-box.leaf-three.left {
+    left: 20%; top: -20%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.first-box.leaf-four.left {
+    left: 0.5%; top: -20%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.first-box.leaf-five.left {
+    left: 20%; top: -20%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.first-box.leaf-six.left {
+    left: 5%; top: -20%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+.single-leaf.first-box.leaf-one.right {
+    right: 5%; top: -20%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.first-box.leaf-two.right {
+    right: 10%; top: -20%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.first-box.leaf-three.right {
+    right: 20%; top: -20%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.first-box.leaf-four.right {
+    right: 15%; top: -20%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.first-box.leaf-five.right {
+    right: 25%; top: -20%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.first-box.leaf-six.right {
+    right: 15%; top: -20%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+
+/* Second Box */
+
+.single-leaf.second-box.leaf-one.left {
+    left: 0.5%; top: -35%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.second-box.leaf-two.left {
+    left: 1.5%; top: -35%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.second-box.leaf-three.left {
+    left: 20%; top: -35%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.second-box.leaf-four.left {
+    left: 0.5%; top: -35%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.second-box.leaf-five.left {
+    left: 20%; top: -35%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.second-box.leaf-six.left {
+    left: 5%; top: -35%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+.single-leaf.second-box.leaf-one.right {
+    right: 5%; top: -35%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.second-box.leaf-two.right {
+    right: 10%; top: -35%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.second-box.leaf-three.right {
+    right: 20%; top: -35%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.second-box.leaf-four.right {
+    right: 15%; top: -35%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.second-box.leaf-five.right {
+    right: 25%; top: -35%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.second-box.leaf-six.right {
+    right: 15%; top: -35%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+
+
+/* Last Box */
+
+.single-leaf.last-box.leaf-one.left {
+    left: 0.5%; top: -15%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.last-box.leaf-two.left {
+    left: 1.5%; top: -15%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.last-box.leaf-three.left {
+    left: 20%; top: -15%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.last-box.leaf-four.left {
+    left: 0.5%; top: -15%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.last-box.leaf-five.left {
+    left: 20%; top: -15%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.last-box.leaf-six.left {
+    left: 5%; top: -15%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+.single-leaf.last-box.leaf-one.right {
+    right: 5%; top: -15%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.last-box.leaf-two.right {
+    right: 10%; top: -15%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.last-box.leaf-three.right {
+    right: 20%; top: -15%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.last-box.leaf-four.right {
+    right: 15%; top: -15%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.last-box.leaf-five.right {
+    right: 25%; top: -15%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.last-box.leaf-six.right {
+    right: 15%; top: -15%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
 }
 
 @media screen and (max-width: 375px) {

@@ -160,89 +160,6 @@ body {
     }
 }
 
-.single-leaf {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    /* background-color: #000; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    animation: leafshake 10s infinite linear;
-}
-
-.single-leaf.leaf-one.left {
-    left: 10%; top: -20%;
-    background-image: url('../images/single-leaf-02.png');
-    animation-delay: 1s;
-}
-
-.single-leaf.leaf-two.left {
-    left: 2.5%; top: -20%;
-    background-image: url('../images/single-leaf-03.png');
-    animation-delay: 4s;
-}
-
-.single-leaf.leaf-three.left {
-    left: 20%; top: -20%;
-    background-image: url('../images/single-leaf-04.png');
-    animation-delay: 2.5s;
-}
-
-.single-leaf.leaf-four.left {
-    left: 10%; top: -20%;
-    background-image: url('../images/single-leaf-05.png');
-    animation-delay: 5.5s;
-}
-
-.single-leaf.leaf-five.left {
-    left: 20%; top: -20%;
-    background-image: url('../images/single-leaf-02.png');
-    animation-delay: 7s;
-}
-
-.single-leaf.leaf-six.left {
-    left: 5%; top: -20%;
-    background-image: url('../images/single-leaf-03.png');
-    animation-delay: 8.5s;
-}
-
-.single-leaf.leaf-one.right {
-    right: 5%; top: -20%;
-    background-image: url('../images/single-leaf-02.png');
-    animation-delay: 1s;
-}
-
-.single-leaf.leaf-two.right {
-    right: 10%; top: -20%;
-    background-image: url('../images/single-leaf-03.png');
-    animation-delay: 4s;
-}
-
-.single-leaf.leaf-three.right {
-    right: 20%; top: -20%;
-    background-image: url('../images/single-leaf-04.png');
-    animation-delay: 2.5s;
-}
-
-.single-leaf.leaf-four.right {
-    right: 15%; top: -20%;
-    background-image: url('../images/single-leaf-05.png');
-    animation-delay: 5.5s;
-}
-
-.single-leaf.leaf-five.right {
-    right: 25%; top: -20%;
-    background-image: url('../images/single-leaf-02.png');
-    animation-delay: 7s;
-}
-
-.single-leaf.leaf-six.right {
-    right: 15%; top: -20%;
-    background-image: url('../images/single-leaf-03.png');
-    animation-delay: 8.5s;
-}
-
 #first-box .text-box {
     padding: 10% 15%;
     position: relative;
@@ -296,6 +213,532 @@ body {
     transform: translateY(-50%);
 }
 
+.ma-b-25 {
+    margin-bottom: 25px;
+}
+
+.sans-serif {
+    font-family: sans-serif !important;
+}
+
+.color-gold {
+    color: #B38728 !important;
+}
+
 #second-box {
-    height: 100vh;
+    padding: 5% 2.5%;
+    overflow: hidden;
+}
+
+#second-box .content {
+    position: relative;
+}
+
+#second-box .wrapper-box {
+    padding: 2.5%;
+    border: 1px solid #B38728;
+    border-radius: 5px;
+}
+
+#second-box .btn-countdown {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #B38728;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#second-box .wrapper-date {
+    background-color: #B38728;
+    border-radius: 10px;
+    color: #fff;
+    padding: 2.5% 2.5%;
+}
+
+#second-box .wrapper-date .p {
+    margin: 0;
+}
+
+#countdown-box {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#countdown-box .content {
+    padding-top: 10%;
+    padding-bottom: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#countdown-box .content::before {
+    content: '';
+    width: 350px;
+    height: 350px;
+    /* background-color: #000; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url('../images/leaf-two-02-02.png');
+    position: absolute;
+    transform: rotate(180deg);
+    top: 0;
+    left: -5%;
+}
+
+#countdown-box .content::after {
+    content: '';
+    width: 350px;
+    height: 350px;
+    /* background-color: #000; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url('../images/leaf-two-02-02.png');
+    position: absolute;
+    transform: rotate(180deg) scaleX(-1);
+    top: 0;
+    right: -5%;
+}
+
+#countdown-box .wrapper-box {
+    width: 75%;
+    display: flex;
+    padding-top: 2.5%;
+}
+
+#countdown-box #days,
+#countdown-box #hours,
+#countdown-box #minute,
+#countdown-box #seconds {
+    width: 20%;
+    padding: 2.5% 10px;
+    background-color: #B38728;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#countdown-box #days .count,
+#countdown-box #hours .count,
+#countdown-box #minute .count,
+#countdown-box #seconds .count {
+    font-size: 36px;
+}
+
+#gift-box {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#gift-box .content {
+    padding-top: 0%;
+    padding-bottom: 10%;
+}
+
+#gift-box .content::before {
+    content: '';
+    width: 350px;
+    height: 350px;
+    /* background-color: #000; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url('../images/leaf-two-02-02.png');
+    position: absolute;
+    transform: rotate(360deg);
+    bottom: -10%;
+    right: -5%;
+}
+
+#gift-box .content::after {
+    content: '';
+    width: 350px;
+    height: 350px;
+    /* background-color: #000; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url('../images/leaf-two-02-02.png');
+    position: absolute;
+    transform: rotate(360deg) scaleX(-1);
+    bottom: -10%;
+    left: -5%;
+}
+
+#gift-box .box-gift-desc {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+#gift-box .title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gift-box .box-gift-desc .rekening {
+    width: auto;
+    padding: 2.5% 7.5%;
+    background-color: #B38728;
+    border-radius: 10px;
+}
+
+#gift-box .box-gift-desc button {
+    border: none;
+    background-color: #B38728;
+    color: #fff;
+    padding: 2.5%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#gift-box .box-gift-desc .rekening p {
+    margin: 0;
+}
+
+#maps-box {
+    position: relative;
+    padding: 20px 5%;
+}
+
+#maps-box .wrapper-button {
+    margin-top: 40px;
+}
+
+#maps-box .wrapper-button a {
+    padding: 15px 25px;
+    background-color: #B38728;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#maps-box .wrapper-maps {
+    width: 100%;
+    padding: 10px;
+    background-color: #B38728;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(25,25,25,0.2);
+}
+
+#maps-box .wrapper-maps iframe {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#protocol-box {
+    position: relative;
+    padding: 5% 2.5%;
+    padding-top: 10%;
+    overflow: hidden;
+}
+
+#protocol-box .content::before {
+    content: '';
+    width: 350px;
+    height: 350px;
+    /* background-color: #000; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url('../images/leaf-two-02-02.png');
+    position: absolute;
+    transform: rotate(180deg);
+    top: -5%;
+    left: -5%;
+}
+
+#protocol-box .content::after {
+    content: '';
+    width: 350px;
+    height: 350px;
+    /* background-color: #000; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url('../images/leaf-two-02-02.png');
+    position: absolute;
+    transform: rotate(180deg) scaleX(-1);
+    top: -5%;
+    right: -5%;
+}
+
+#protocol-box .wrapper-box {
+    display: flex;
+}
+
+#protocol-box .wrapper-box .protocol {
+    background-color: #B38728;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5%;
+    border-radius: 10px;
+    margin: auto;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+#protocol-box .wrapper-box .protocol i {
+    font-size: 42px !important;
+    margin-bottom: 10px;
+}
+
+/* ===== Leaf ===== */
+.single-leaf {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    /* background-color: #000; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: leafshake 10s infinite linear;
+    z-index: -1;
+}
+
+#last-box {
+    position: relative;
+    overflow: hidden;
+}
+
+/* First Box */
+
+.single-leaf.first-box.leaf-one.left {
+    left: 10%; top: -20%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.first-box.leaf-two.left {
+    left: 2.5%; top: -20%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.first-box.leaf-three.left {
+    left: 20%; top: -20%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.first-box.leaf-four.left {
+    left: 10%; top: -20%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.first-box.leaf-five.left {
+    left: 20%; top: -20%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.first-box.leaf-six.left {
+    left: 5%; top: -20%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+.single-leaf.first-box.leaf-one.right {
+    right: 5%; top: -20%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.first-box.leaf-two.right {
+    right: 10%; top: -20%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.first-box.leaf-three.right {
+    right: 20%; top: -20%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.first-box.leaf-four.right {
+    right: 15%; top: -20%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.first-box.leaf-five.right {
+    right: 25%; top: -20%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.first-box.leaf-six.right {
+    right: 15%; top: -20%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+
+/* Second Box */
+
+.single-leaf.second-box.leaf-one.left {
+    left: 10%; top: -35%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.second-box.leaf-two.left {
+    left: 2.5%; top: -35%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.second-box.leaf-three.left {
+    left: 20%; top: -35%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.second-box.leaf-four.left {
+    left: 10%; top: -35%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.second-box.leaf-five.left {
+    left: 20%; top: -35%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.second-box.leaf-six.left {
+    left: 5%; top: -35%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+.single-leaf.second-box.leaf-one.right {
+    right: 5%; top: -35%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.second-box.leaf-two.right {
+    right: 10%; top: -35%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.second-box.leaf-three.right {
+    right: 20%; top: -35%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.second-box.leaf-four.right {
+    right: 15%; top: -35%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.second-box.leaf-five.right {
+    right: 25%; top: -35%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.second-box.leaf-six.right {
+    right: 15%; top: -35%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+
+
+/* Last Box */
+
+.single-leaf.last-box.leaf-one.left {
+    left: 10%; top: -15%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.last-box.leaf-two.left {
+    left: 2.5%; top: -15%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.last-box.leaf-three.left {
+    left: 20%; top: -15%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.last-box.leaf-four.left {
+    left: 10%; top: -15%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.last-box.leaf-five.left {
+    left: 20%; top: -15%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.last-box.leaf-six.left {
+    left: 5%; top: -15%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
+}
+
+.single-leaf.last-box.leaf-one.right {
+    right: 5%; top: -15%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 1s;
+}
+
+.single-leaf.last-box.leaf-two.right {
+    right: 10%; top: -15%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 4s;
+}
+
+.single-leaf.last-box.leaf-three.right {
+    right: 20%; top: -15%;
+    background-image: url('../images/single-leaf-04.png');
+    animation-delay: 2.5s;
+}
+
+.single-leaf.last-box.leaf-four.right {
+    right: 15%; top: -15%;
+    background-image: url('../images/single-leaf-05.png');
+    animation-delay: 5.5s;
+}
+
+.single-leaf.last-box.leaf-five.right {
+    right: 25%; top: -15%;
+    background-image: url('../images/single-leaf-02.png');
+    animation-delay: 7s;
+}
+
+.single-leaf.last-box.leaf-six.right {
+    right: 15%; top: -15%;
+    background-image: url('../images/single-leaf-03.png');
+    animation-delay: 8.5s;
 }
