@@ -116,7 +116,7 @@ body {
     height: 500px;
     /* background-color: #000; */
     background-repeat: no-repeat;
-    background-position: right -75px bottom -30px;
+    background-position: right -75px bottom 0;
     background-size: 100%;
     background-image: url('../images/leaf-two-02-02.png');
     position: absolute;
@@ -135,6 +135,10 @@ body {
     font-weight: 700;
     margin-bottom: 25px;
     text-align: center;
+}
+
+.font-big {
+    font-size: 38px;
 }
 
 @keyframes leafshake {
@@ -238,6 +242,28 @@ body {
     padding: 2.5%;
     border: 1px solid #B38728;
     border-radius: 5px;
+}
+
+#second-box .wrapper-parent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second-box .wrapper-p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-box .wrapper-p h4 {
+    font-size: 16px;
+}
+
+#second-box .wrapper-p small {
+    margin: 0 5px;
 }
 
 #second-box .btn-countdown {

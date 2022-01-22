@@ -23,6 +23,10 @@
 }
 
 @media screen and (max-width: 485px) {
+    #gift-box {
+        padding-bottom: 15%;
+    }
+
     #first-box .content::before,
     #first-box .content::after {
         width: 300px;
@@ -66,6 +70,11 @@
 @media screen and (max-width: 425px) {
     #first-box .h1-wt {
         font-size: 2.5rem;
+    }
+
+    #protocol-box .content::before,
+    #protocol-box .content::after {
+        top: 0;
     }
 
     #protocol-box {
