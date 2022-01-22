@@ -246,25 +246,27 @@
                 console.log('Async: Could not copy text: ', err);
             });
         }
-    
+
+        function PlayMusic() {
+            let Music = new Audio('assets/music/Music Wedding 1.mp3')
+
+            $('#play-button').on('click', function() {
+                $(this).removeClass('active')
+                $('#pause-button').addClass('active')
+
+                Music.play()
+            })
+
+            $('#pause-button').on('click', function() {
+                $(this).removeClass('active')
+                $('#play-button').addClass('active')
+
+                Music.pause()
+            })
+        }
+
+        PlayMusic()
         countDownTime()
-        copyText()
-
-        let Music = new Audio('assets/music/Music Wedding 1.mp3')
-
-        $('#play-button').on('click', function() {
-            $(this).removeClass('active')
-            $('#pause-button').addClass('active')
-
-            Music.play()
-        })
-
-        $('#pause-button').on('click', function() {
-            $(this).removeClass('active')
-            $('#play-button').addClass('active')
-
-            Music.pause()
-        })
     </script>
 </body>
 </html>
