@@ -141,6 +141,24 @@ body {
     font-size: 38px;
 }
 
+.btn-abs {
+    display: none;
+    border: none;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #B38728;
+    box-shadow: 3px 3px 10px rgba(25,25,25,0.2);
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 999;
+}
+
+.btn-abs.active {
+    display: block;
+}
+
 @keyframes leafshake {
     0% {
         width: 80px;

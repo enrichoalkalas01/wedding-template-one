@@ -14,6 +14,8 @@
 </head>
 <body>
     <section id="app" class="main-content container-fluid" style="padding-left: 0; padding-right: 0; overflow-x: hidden;">
+        <button id="play-button" class="btn-abs btn-play active">Play Music</button>
+        <button id="pause-button" class="btn-abs btn-pause">Pause Music</button>
         <section id="first-box" class="row box-content">
             <div class="col-md-12 content box">
                 <div class="single-leaf first-box left leaf-one"></div>
@@ -241,12 +243,28 @@
             navigator.clipboard.writeText(text).then(function() {
                 console.log('Async: Copying to clipboard was successful!');
             }, function(err) {
-                console.error('Async: Could not copy text: ', err);
+                console.log('Async: Could not copy text: ', err);
             });
         }
     
         countDownTime()
         copyText()
+
+        let Music = new Audio('assets/music/Music Wedding 1.mp3')
+
+        $('#play-button').on('click', function() {
+            $(this).removeClass('active')
+            $('#pause-button').addClass('active')
+
+            Music.play()
+        })
+
+        $('#pause-button').on('click', function() {
+            $(this).removeClass('active')
+            $('#play-button').addClass('active')
+
+            Music.pause()
+        })
     </script>
 </body>
 </html>
