@@ -241,6 +241,7 @@
         function copyText() {
             var text = 7151019432;
             navigator.clipboard.writeText(text).then(function() {
+                alert('Copying to clipboard was successful!')
                 console.log('Async: Copying to clipboard was successful!');
             }, function(err) {
                 console.log('Async: Could not copy text: ', err);
